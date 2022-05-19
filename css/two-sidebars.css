@@ -1,0 +1,124 @@
+.sidebar {
+  max-width: 340px;
+  min-width: 250px;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-family: "Montserrat";
+  line-height: 1.4;
+  color: #2c2f34;
+}
+.sidebar .container-wrapper {
+  margin-bottom: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar .container-wrapper .the-subtitle {
+  font-size: 15px;
+  min-height: 15px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2c2f34;
+}
+.sidebar .container-wrapper h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.sidebar .container-wrapper ul {
+  padding: 0;
+  list-style-type: ">";
+}
+.sidebar .container-wrapper ul li {
+  font-size: 13.5px;
+  padding: 5px 0 5px 12px;
+}
+.sidebar .container-wrapper ul li a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar .recente {
+  position: sticky;
+  top: 20px;
+  margin-bottom: 0;
+}
+.sidebar .recente .recente-main a {
+  position: relative;
+}
+.sidebar .recente .recente-main a img {
+  max-width: 275px;
+  width: 100%;
+  height: auto;
+}
+.sidebar .recente .recente-main a span {
+  position: absolute;
+  background-color: #7c284e;
+  color: #FFFFFF;
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 1.85em;
+  bottom: 10px;
+  right: 10px;
+}
+.sidebar .recente .title {
+  color: #333;
+  text-decoration: none;
+  transition: 0.15s;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.sidebar .recente a.title-link {
+  color: #333;
+  text-decoration: none;
+  transition: 0.15s;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 30px;
+}
+.sidebar .recente .post {
+  padding: 10px 0;
+  min-height: 100px;
+}
+.sidebar .recente .post a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+}
+.sidebar .recente .post a img {
+  width: 110px;
+  height: 75px;
+  margin-right: 10px;
+}
+.sidebar .recente .post a span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    max-width: 900px;
+    margin-top: 30px;
+    padding-right: 15px;
+  }
+  .sidebar .recente .post a {
+    flex-direction: column;
+  }
+  .sidebar .recente .post a img {
+    max-width: 275px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .sidebar .recente .post a span {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=two-sidebars.css.map */

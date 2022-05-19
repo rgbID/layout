@@ -1,0 +1,62 @@
+.specification-box {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  display: flex;
+  font-family: "Roboto";
+}
+.specification-box .one-half {
+  width: 50%;
+}
+.specification-box .one-half:first-child {
+  padding-right: 30px;
+  border-right: 2px solid #e5e5e5;
+}
+.specification-box .one-half h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #7c284e;
+}
+.specification-box .one-half .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specification-box .one-half .button a {
+  position: relative;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 140px;
+  background-color: #7c284e;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  line-height: 32px;
+}
+.specification-box .one-half .button a:hover {
+  background-color: #4a001c;
+}
+.specification-box .one-half .button span {
+  position: relative;
+  color: #767676;
+  line-height: 32px;
+  white-space: pre;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .specification-box {
+    flex-direction: column;
+  }
+  .specification-box .one-half {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  .specification-box .one-half:first-child {
+    border: none;
+  }
+}
+/*# sourceMappingURL=specification.css.map */

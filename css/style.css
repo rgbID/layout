@@ -1,3 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 @import 'header.css';
+
+@import 'main-content.css';
+
+@import 'product-list.css';
+
+@import 'footer.css';
+
+@import 'two-sidebars.css';
+
+@import 'pro-contra.css';
+
+@import 'specification.css';

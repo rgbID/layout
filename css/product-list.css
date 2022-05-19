@@ -1,0 +1,164 @@
+#product-table {
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 6px 25px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+  font-family: "Roboto";
+  margin: 0 auto;
+}
+#product-table .product-table-head {
+  display: table-header-group;
+  height: 60px;
+  width: auto;
+}
+#product-table .product-table-head .product-table-row .column {
+  background-color: #f6f7f9;
+  color: #767676;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 5px;
+  text-align: center;
+}
+#product-table .product-table-body {
+  display: table-row-group;
+}
+#product-table .product-table-body .product-table-row {
+  height: 85px;
+  padding: 0;
+}
+#product-table .product-table-row {
+  display: table-row;
+}
+#product-table .product-table-row .column {
+  display: table-cell;
+  width: auto;
+  border-right: 1px solid #e5e5e5;
+  vertical-align: middle;
+  text-align: left;
+  padding: 5px;
+  border-bottom: 2px solid #e5e5e5;
+}
+#product-table .product-table-row .column .product-table-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 17px;
+  padding: 5px 10px;
+  min-width: 50px;
+}
+#product-table .product-table-row .column .product-table-number span {
+  color: #7c284e;
+  text-align: center;
+  line-height: 17px;
+  font-size: 18px;
+}
+#product-table .product-table-row .column .product-table-number small {
+  color: #b9b9b9;
+  font-size: 13px;
+}
+#product-table .product-table-row .column a img {
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+}
+#product-table .product-table-row .column.column-title a {
+  color: #767676;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+#product-table .product-table-row .column:last-child {
+  min-width: 190px;
+}
+#product-table .product-table-row .column:last-child .product-table-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#product-table .product-table-row .column:last-child .product-table-button a {
+  position: relative;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 140px;
+  background-color: #7c284e;
+  text-align: center;
+  border-radius: 30px;
+}
+#product-table .product-table-row .column:last-child .product-table-button a span {
+  position: relative;
+  color: white;
+  line-height: 32px;
+  white-space: pre;
+  z-index: 1;
+}
+#product-table .product-table-row .column:last-child .product-table-button.sale a {
+  border: 3px solid #ff9000;
+}
+#product-table .product-table-row .column:last-child .product-table-button.sale a::before {
+  content: "";
+  background-image: url("../img/discount-badge.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 1;
+}
+#product-table .product-table-row .column:last-child .product-table-button span {
+  display: block;
+  color: #767676;
+  font-size: small;
+  line-height: 1.4;
+  margin-top: 3px;
+}
+#product-table .product-table-row .column .product-table-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#product-table .product-table-row .column .product-table-rating span {
+  color: #767676;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+#product-table .product-table-row .column .product-table-rating a {
+  color: #767676;
+  font-size: x-small;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#product-table .product-table-row.highlighted-row {
+  background-color: rgb(1, 151, 188);
+}
+#product-table .product-table-row.highlighted-row .column .product-table-number span {
+  color: #d84343;
+}
+#product-table .product-table-row.highlighted-row .column .product-table-number small {
+  color: white;
+}
+#product-table .product-table-row.highlighted-row .column:nth-child(3) a {
+  color: white;
+}
+#product-table .product-table-row.highlighted-row .column .product-table-rating span {
+  color: white;
+}
+#product-table .product-table-row.highlighted-row .column .product-table-rating a {
+  color: white;
+}
+#product-table .product-table-row.highlighted-row .column:last-child .product-table-button a {
+  background-color: #d84343;
+}
+#product-table .product-table-row.highlighted-row .column:last-child .product-table-button span {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  #product-table {
+    display: none;
+  }
+}
+/*# sourceMappingURL=product-list.css.map */

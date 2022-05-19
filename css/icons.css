@@ -29,6 +29,10 @@
 .fa-bars::before {
   content: "\f0c9";}
   
+.fa-facebook::before {
+  content: "\f09a";
+}
+
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;

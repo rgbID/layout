@@ -1,0 +1,27 @@
+#footer {
+  background-color: #17171a;
+  color: white;
+  line-height: 32px;
+  font-size: 13px;
+  font-family: "Roboto";
+  border-top: 8px solid #7c284e;
+  margin-top: 50px;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+#footer a:hover {
+  transition: all 0.3s;
+  color: #7c284e;
+}
+#footer #site-info {
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+/*# sourceMappingURL=footer.css.map */
