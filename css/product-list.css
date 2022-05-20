@@ -90,6 +90,9 @@
   white-space: pre;
   z-index: 1;
 }
+#product-table .product-table-row .column:last-child .product-table-button:hover a {
+  background-color: #4a001c;
+}
 #product-table .product-table-row .column:last-child .product-table-button.sale a {
   border: 3px solid #ff9000;
 }
@@ -151,6 +154,9 @@
 }
 #product-table .product-table-row.highlighted-row .column:last-child .product-table-button a {
   background-color: #d84343;
+}
+#product-table .product-table-row.highlighted-row .column:last-child .product-table-button:hover a {
+  background-color: #982F2F;
 }
 #product-table .product-table-row.highlighted-row .column:last-child .product-table-button span {
   color: white;

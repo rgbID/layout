@@ -73,21 +73,7 @@ body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item .sub-
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover {
   background-color: #591F3D;
 }
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active {
-  background-color: #591F3D;
-}
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu {
-  display: block;
-  position: absolute;
-  padding: 15px;
-  width: 230px;
-  box-sizing: border-box;
-  top: 100%;
-  left: 0;
-  background-color: #f6f7f9;
-  border-top: 1px solid #591F3D;
-}
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active .sub-menu {
   display: block;
   position: absolute;
   padding: 15px;
@@ -106,44 +92,23 @@ body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover
   align-items: flex-start;
   background-color: transparent;
 }
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active .sub-menu li {
-  height: auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: transparent;
-}
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu li a {
-  color: #591F3D;
-  padding: 8px 10px;
-}
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active .sub-menu li a {
-  color: #591F3D;
+  color: #7C284E;
   padding: 8px 10px;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu li a:before {
   display: none;
 }
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active .sub-menu li a:before {
-  display: none;
+body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu li:hover a {
+  color: #591F3D;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover a {
-  color: #ffffff;
-}
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active a {
   color: #ffffff;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover a::before {
   border-top: 4px solid #ffffff;
 }
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:active a::before {
-  border-top: 4px solid #ffffff;
-}
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:last-child:hover .sub-menu {
-  left: -137%;
-}
-body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:last-child:active .sub-menu {
   left: -137%;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item.home-item {

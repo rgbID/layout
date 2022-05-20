@@ -1,4 +1,5 @@
 .sidebar {
+  display: block;
   max-width: 340px;
   min-width: 250px;
   padding-left: 15px;
@@ -36,10 +37,13 @@
   text-decoration: none;
   color: black;
 }
+.sidebar .container-wrapper ul li:hover a {
+  color: #591F3D;
+}
 .sidebar .recente {
+  margin-bottom: 0;
   position: sticky;
   top: 20px;
-  margin-bottom: 0;
 }
 .sidebar .recente .recente-main a {
   position: relative;
@@ -58,6 +62,13 @@
   line-height: 1.85em;
   bottom: 10px;
   right: 10px;
+}
+.sidebar .recente .recente-main:hover a {
+  color: #7c284e;
+}
+.sidebar .recente .recente-main:hover a img {
+  transition: all 0.3s;
+  opacity: 0.85;
 }
 .sidebar .recente .title {
   color: #333;
@@ -100,6 +111,13 @@
   font-weight: 600;
   overflow-wrap: break-word;
   margin-left: auto;
+}
+.sidebar .recente .post:hover a {
+  color: #7c284e;
+}
+.sidebar .recente .post:hover a img {
+  transition: all 0.3s;
+  opacity: 0.85;
 }
 
 @media (max-width: 992px) {
