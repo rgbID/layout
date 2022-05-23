@@ -66,6 +66,17 @@ html {
 #main-container .main-content .post-container #the-post .entry-content {
   padding: 0 30px 30px;
 }
+#main-container .main-content .post-container #the-post .entry-content .review-block {
+  padding-bottom: 20px;
+  border-bottom: 5px solid #e5e5e5;
+}
+#main-container .main-content .post-container #the-post .entry-content .review-block:last-child {
+  padding: 0;
+  border: none;
+}
+#main-container .main-content .post-container #the-post .entry-content .review-block h1, #main-container .main-content .post-container #the-post .entry-content .review-block h2, #main-container .main-content .post-container #the-post .entry-content .review-block h3 {
+  font-weight: 500;
+}
 #main-container .main-content .post-container #the-post .entry-content p, #main-container .main-content .post-container #the-post .entry-content ul, #main-container .main-content .post-container #the-post .entry-content ol {
   font-family: "Roboto";
   overflow-wrap: break-word;
@@ -179,6 +190,26 @@ html {
   cursor: pointer;
   padding: 10px 13px 5px;
   font-size: 18px;
+  width: 35px;
+  height: 35px;
+}
+#scroll-up::before {
+  content: "";
+  width: 5px;
+  border-top: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  left: 41%;
+  top: 45%;
+  transform: rotate(-45deg);
+}
+#scroll-up::after {
+  content: "";
+  width: 5px;
+  border-top: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  transform: rotate(45deg);
 }
 
 #scroll-up:hover {

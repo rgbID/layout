@@ -20,6 +20,14 @@
   font-variant: normal;
   line-height: 1;
   text-rendering: auto; }
+.fa-regular {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
 
 .fa-house::before {
   content: "\f015"; }
@@ -49,7 +57,9 @@
 .fa-pinterest::before {
   content: "\f0d2";
 }
-
+.fa-angle-right::before {
+  content: "\f6bc";
+}
 
 @font-face {
   font-family: 'Font Awesome 6 Free';
@@ -63,11 +73,22 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff2") format("truetype"); }
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff2") format("truetype"); }
+
 
 .fa-solid {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900; }
 .fa-brands {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+.fa-regular {
   font-family: 'Font Awesome 6 Free';
   font-weight: 400; }
