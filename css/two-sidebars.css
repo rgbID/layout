@@ -4,7 +4,7 @@
   min-width: 250px;
   padding-left: 15px;
   padding-right: 45px;
-  font-family: "Montserrat";
+  font-family: "Roboto";
   line-height: 1.4;
   color: #2c2f34;
   z-index: 1;
@@ -16,10 +16,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .sidebar .container-wrapper .the-subtitle {
+  font-family: "Montserrat";
   position: relative;
   font-size: 15px;
   min-height: 15px;
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 10px;
   color: #000;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -45,8 +46,12 @@
   left: 0;
 }
 .sidebar .container-wrapper h4 {
-  font-size: 17px;
-  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px !important;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #2c2f34;
 }
 .sidebar .container-wrapper ul {
   padding: 0;
@@ -54,12 +59,13 @@
 }
 .sidebar .container-wrapper ul li {
   font-size: 13.5px;
-  padding: 5px 0 5px 12px;
+  line-height: 21px;
+  padding: 0 0 5px 12px;
   position: relative;
 }
 .sidebar .container-wrapper ul li a {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 .sidebar .container-wrapper ul li:hover a {
   color: #591F3D;
@@ -70,7 +76,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 8px;
   transform: rotate(45deg);
 }
 .sidebar .container-wrapper ul li::after {
@@ -79,13 +85,16 @@
   border-top: 1px solid rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 0;
-  top: 15px;
+  top: 11px;
   transform: rotate(-45deg);
 }
 .sidebar .recente {
   margin-bottom: 0;
   position: sticky;
   top: 20px;
+}
+.sidebar .recente .the-subtitle {
+  color: #2c2f34;
 }
 .sidebar .recente .recente-main a {
   position: relative;
@@ -119,12 +128,13 @@
   margin-bottom: 20px;
 }
 .sidebar .recente a.title-link {
-  color: #000;
+  color: #333;
   text-decoration: none;
   transition: 0.15s;
+  font-family: "Montserrat";
   font-size: 18px;
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   margin-bottom: 30px;
 }
@@ -133,7 +143,6 @@
 }
 .sidebar .recente .post {
   padding: 10px 0;
-  min-height: 100px;
 }
 .sidebar .recente .post a {
   display: flex;
@@ -147,10 +156,11 @@
   margin-right: 10px;
 }
 .sidebar .recente .post a span {
+  font-family: "Montserrat";
   display: block;
   font-size: 14px;
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 600;
   overflow-wrap: break-word;
   margin-left: auto;
 }

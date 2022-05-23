@@ -4,6 +4,7 @@
   display: table;
   font-family: "Roboto";
   margin: 0 auto;
+  width: 100%;
 }
 #product-table .product-table-head {
   display: table-header-group;

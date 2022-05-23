@@ -9,32 +9,34 @@
   width: 50%;
 }
 .pro-cons-table .one-half:first-child {
-  padding-right: 30px;
+  padding-right: 10px;
   border-right: 2px solid #e5e5e5;
 }
 .pro-cons-table .one-half h4 {
+  margin-top: 0;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #7c284e;
+  font-weight: 600;
 }
 .pro-cons-table .one-half ul {
   list-style-type: none;
   padding-left: 0;
 }
 .pro-cons-table .one-half ul li {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .pro-cons-table .one-half ul li::before {
   content: "+";
   color: #0ab154;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   margin-left: -25px;
   float: left;
 }
 .pro-cons-table .one-half:last-child ul {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .pro-cons-table .one-half:last-child ul li {
   padding-left: 20px;

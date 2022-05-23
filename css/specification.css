@@ -4,6 +4,7 @@
   background-color: #F6F6F6;
   display: flex;
   font-family: "Roboto";
+  margin-bottom: 30px;
 }
 .specification-box .one-half {
   width: 50%;
@@ -12,11 +13,16 @@
   padding-right: 30px;
   border-right: 2px solid #e5e5e5;
 }
+.specification-box .one-half:first-child ul li {
+  margin-bottom: 5px;
+}
 .specification-box .one-half h4 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #7c284e;
+  margin-top: 0;
+  font-weight: 600;
 }
 .specification-box .one-half .button {
   display: flex;
@@ -44,6 +50,13 @@
   line-height: 32px;
   white-space: pre;
   z-index: 1;
+}
+
+#irobot-roomba-e5 .one-half .button a {
+  background-color: #d84343;
+}
+#irobot-roomba-e5 .one-half .button a:hover {
+  background-color: #982F2F;
 }
 
 @media (max-width: 992px) {

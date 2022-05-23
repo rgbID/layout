@@ -41,7 +41,7 @@ body #header .header-wrapper .menu-wrapper .header-menu ul.menu {
   margin: 0;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item {
-  padding: 0 20px 0 15px;
+  padding: 0 25px 0 14px;
   height: 80px;
   display: flex;
   align-items: center;

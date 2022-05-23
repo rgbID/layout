@@ -35,13 +35,16 @@ html {
   overflow: hidden;
 }
 #main-container .main-content .post-container #the-post .featured-area .single-image .photo-description {
+  font-family: "Roboto";
   position: absolute;
   bottom: 20px;
   left: 20px;
-  padding: 5px;
+  padding: 3px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: 400;
+  background-size: auto;
 }
 #main-container .main-content .post-container #the-post .disclaimer-block {
   display: flex;
@@ -56,8 +59,10 @@ html {
 }
 #main-container .main-content .post-container #the-post .disclaimer-block #disclaimer-text {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
   color: #b9b9b9;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 #main-container .main-content .post-container #the-post header h1 {
   padding: 30px 30px 20px;
@@ -75,7 +80,8 @@ html {
   border: none;
 }
 #main-container .main-content .post-container #the-post .entry-content .review-block h1, #main-container .main-content .post-container #the-post .entry-content .review-block h2, #main-container .main-content .post-container #the-post .entry-content .review-block h3 {
-  font-weight: 500;
+  margin-top: 40px;
+  font-weight: 600;
 }
 #main-container .main-content .post-container #the-post .entry-content p, #main-container .main-content .post-container #the-post .entry-content ul, #main-container .main-content .post-container #the-post .entry-content ol {
   font-family: "Roboto";
@@ -86,6 +92,11 @@ html {
 #main-container .main-content .post-container #the-post .entry-content .robot-photo {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#main-container .main-content .post-container #the-post .entry-content .big-photo {
+  margin-bottom: 25px;
 }
 #main-container .main-content .post-container #the-post .entry-content .big-photo img {
   max-width: 720px;
@@ -99,6 +110,9 @@ html {
   }
 }
 #main-container .main-content .post-container #the-post .entry-content p.video {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
   padding-top: 56.25%;
   overflow: hidden;
   width: 100%;
@@ -142,6 +156,15 @@ html {
     float: none;
     margin: 0;
   }
+}
+#main-container .main-content .post-container #the-post .entry-content .titles-bottom h1 {
+  font-weight: 700;
+}
+#main-container .main-content .post-container #the-post .entry-content .titles-bottom h1, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h2, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h3, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h4, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h5, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h6 {
+  margin: 0 0 0.5em;
+}
+#main-container .main-content .post-container #the-post .entry-content .titles-bottom h2, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h3, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h4, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h5, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h6 {
+  font-weight: 600;
 }
 @media (max-width: 992px) {
   #main-container .main-content {

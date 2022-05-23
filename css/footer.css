@@ -24,4 +24,35 @@
   text-align: center;
   padding: 20px;
 }
+#footer .progress-container {
+  width: 100%;
+  height: 4px;
+  position: fixed;
+  bottom: 0;
+}
+#footer .progress-container .progress-bar {
+  height: 8px;
+  background: #7c284e;
+  width: 0%;
+}
+#footer .footer-links a {
+  padding: 4px;
+  border-radius: 2px;
+}
+#footer .footer-links a:first-child:hover {
+  color: white;
+  background-color: #08f;
+}
+#footer .footer-links a:nth-child(2):hover {
+  color: white;
+  background-color: #40bff5;
+}
+#footer .footer-links a:nth-child(3):hover {
+  color: white;
+  background-color: #e13138;
+}
+#footer .footer-links a:last-child:hover {
+  color: white;
+  background-color: #c13584;
+}
 /*# sourceMappingURL=footer.css.map */
