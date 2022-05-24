@@ -5,7 +5,7 @@
   font-size: 13px;
   font-family: "Roboto";
   border-top: 8px solid #7c284e;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #footer a {
   color: white;
@@ -54,5 +54,13 @@
 #footer .footer-links a:last-child:hover {
   color: white;
   background-color: #c13584;
+}
+@media (max-width: 767px) {
+  #footer .footer-links {
+    margin-top: 15px;
+  }
+  #footer .footer-links a {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

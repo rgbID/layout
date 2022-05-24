@@ -28,6 +28,9 @@
 #product-table .product-table-row {
   display: table-row;
 }
+#product-table .product-table-row:hover {
+  background-color: #F6F7F9;
+}
 #product-table .product-table-row .column {
   display: table-cell;
   width: auto;
@@ -157,6 +160,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+#product-table .product-table-row .column .product-table-rating a:hover {
+  text-decoration: underline;
+}
 #product-table .product-table-row.highlighted-row {
   background-color: rgb(1, 151, 188);
 }
@@ -185,7 +191,7 @@
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #product-table {
     width: 100%;
     box-shadow: none;
@@ -203,6 +209,12 @@
     border-bottom: none;
     box-shadow: 0 6px 25px 3px rgba(0, 0, 0, 0.2);
     padding: 20px;
+  }
+  #product-table .product-table-body .product-table-row:hover {
+    background-color: #fff;
+  }
+  #product-table .product-table-body .product-table-row.highlighted-row:hover {
+    background-color: rgb(1, 151, 188);
   }
   #product-table .product-table-body .product-table-row .column {
     display: flex;
@@ -228,6 +240,12 @@
   #product-table .product-table-body .product-table-row .column:nth-child(2) {
     padding-top: 30px;
   }
+  #product-table .product-table-body .product-table-row .column .product-table-button a {
+    border-radius: 5px;
+  }
+  #product-table .product-table-body .product-table-row .column .product-table-button.sale a {
+    border-radius: 30px;
+  }
   #product-table .product-table-body .product-table-row .column.column-title a {
     padding: 5px;
   }
@@ -239,6 +257,12 @@
   #product-table .product-table-body .product-table-row .column:last-child {
     border-bottom: none;
     padding-bottom: 30px;
+  }
+  #product-table .product-table-body .product-table-row.highlighted-row .product-table-number {
+    border: 1px solid #fff;
+  }
+  #product-table .product-table-body .product-table-row.highlighted-row .product-table-number span {
+    color: #ff9000;
   }
 }
 /*# sourceMappingURL=product-list.css.map */

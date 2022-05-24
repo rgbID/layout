@@ -171,12 +171,22 @@
   transition: all 0.3s;
   opacity: 0.85;
 }
+@media (max-width: 1110px) {
+  .sidebar .recente .post:nth-child(3),
+.sidebar .recente .post:nth-child(4) {
+    margin-left: -12px;
+  }
+}
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .sidebar {
-    max-width: 900px;
-    margin-top: 30px;
-    padding-right: 15px;
+    max-width: 991px;
+    margin-top: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
   .sidebar .recente .recente-content {
     display: flex;
@@ -206,10 +216,15 @@
   .sidebar .recente .recente-content .posts .post a span {
     margin-left: 0;
     height: auto;
-    font-weight: 500;
+    font-weight: 600;
   }
   .sidebar .recente .recente-content .posts .post:last-child {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar .container-wrapper {
+    padding: 20px 15px;
   }
 }
 @media (max-width: 670px) {

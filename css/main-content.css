@@ -103,12 +103,6 @@ html {
   width: 100%;
   height: auto;
 }
-@media (max-width: 992px) {
-  #main-container .main-content .post-container #the-post .entry-content .big-photo {
-    display: flex;
-    justify-content: center;
-  }
-}
 #main-container .main-content .post-container #the-post .entry-content p.video {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -133,7 +127,7 @@ html {
   float: right;
   margin: 0.375em 0 1em 1.75em;
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   #main-container .main-content .post-container #the-post .entry-content p.float-image {
     display: flex;
     justify-content: center;
@@ -147,7 +141,7 @@ html {
   float: left;
   margin: 0.375em 1.75em 1em 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   #main-container .main-content .post-container #the-post .entry-content p.float-left {
     display: flex;
     justify-content: center;
@@ -166,12 +160,12 @@ html {
 #main-container .main-content .post-container #the-post .entry-content .titles-bottom h2, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h3, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h4, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h5, #main-container .main-content .post-container #the-post .entry-content .titles-bottom h6 {
   font-weight: 600;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main-container .main-content {
     flex-direction: column;
   }
   #main-container .main-content .post-container {
-    max-width: 992px;
+    max-width: 991px;
     padding: 0;
   }
 }
@@ -200,10 +194,15 @@ html {
   font-family: "Montserrat";
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main-container {
     margin-top: 15px;
     padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  #main-container {
+    padding: 0;
   }
 }
 #scroll-up {

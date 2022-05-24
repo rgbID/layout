@@ -26,6 +26,7 @@
 }
 .pro-cons-table .one-half ul li {
   padding-left: 40px;
+  margin-bottom: 5px;
 }
 .pro-cons-table .one-half ul li::before {
   content: "+";
@@ -50,7 +51,7 @@
   float: left;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .pro-cons-table .one-half {
     border: none;
   }
@@ -58,7 +59,7 @@
     border-right: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .pro-cons-table {
     flex-direction: column;
   }

@@ -16,6 +16,9 @@
 .specification-box .one-half:first-child ul li {
   margin-bottom: 5px;
 }
+.specification-box .one-half:first-child ul li strong {
+  font-weight: 600;
+}
 .specification-box .one-half h4 {
   text-align: center;
   text-transform: uppercase;
@@ -37,7 +40,7 @@
   width: 140px;
   background-color: #7c284e;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 5px;
   color: white;
   line-height: 32px;
 }
@@ -50,6 +53,7 @@
   line-height: 32px;
   white-space: pre;
   z-index: 1;
+  font-size: 13px;
 }
 
 #irobot-roomba-e5 .one-half .button a {
@@ -59,7 +63,15 @@
   background-color: #982F2F;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .specification-box {
+    width: 100%;
+  }
+  .specification-box .one-half:first-child {
+    border-right: none;
+  }
+}
+@media (max-width: 767px) {
   .specification-box {
     flex-direction: column;
   }
@@ -70,6 +82,10 @@
   }
   .specification-box .one-half:first-child {
     border: none;
+    margin-bottom: 25px;
+  }
+  .specification-box .one-half:first-child ul {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=specification.css.map */
