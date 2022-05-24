@@ -14,6 +14,7 @@ body #header .header-wrapper {
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 body #header .header-wrapper .header-logo-wrapper {
@@ -97,6 +98,7 @@ body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu li a {
   color: #7C284E;
   padding: 8px 10px;
+  font-weight: 400;
 }
 body #header .header-wrapper .menu-wrapper .header-menu ul.menu .menu-item:hover .sub-menu li a:before {
   display: none;
@@ -147,7 +149,34 @@ body #header .header-wrapper .close-button-burger {
   body #header .header-wrapper .burger-menu {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    width: 20px;
+    height: 16px;
+    position: relative;
+  }
+  body #header .header-wrapper .burger-menu:hover:after, body #header .header-wrapper .burger-menu:hover:before,
+body #header .header-wrapper .burger-menu:hover span {
+    background-color: #7c284e;
+  }
+  body #header .header-wrapper .burger-menu:after, body #header .header-wrapper .burger-menu::before {
+    content: "";
+    background-color: #2c2f34;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  body #header .header-wrapper .burger-menu:after {
+    top: 0;
+  }
+  body #header .header-wrapper .burger-menu::before {
+    bottom: 0;
+  }
+  body #header .header-wrapper .burger-menu span {
+    position: absolute;
+    height: 2px;
+    top: 7px;
+    width: 100%;
+    background-color: #2c2f34;
   }
   body #header .header-wrapper .menu-wrapper {
     right: -400%;
@@ -164,7 +193,7 @@ body #header .header-wrapper .close-button-burger {
     top: 0;
     right: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #1f2024;
     align-items: flex-start;
     scroll-behavior: auto;
     overflow: scroll;
@@ -189,6 +218,7 @@ body #header .header-wrapper .close-button-burger {
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item a {
     color: #ffffff;
     font-size: 16px;
+    font-weight: 600;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item a .fa-angle-down {
     display: inline-block;
@@ -203,22 +233,28 @@ body #header .header-wrapper .close-button-burger {
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover {
     background-color: transparent;
   }
+  body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover a {
+    transition: 0.3s all;
+    opacity: 0.7;
+    color: #f6f7f9;
+  }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu {
     display: block;
     position: static;
     display: block;
     width: 100%;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu li a {
-    color: #ffffff;
+    color: white;
+    opacity: 1;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu li a:before {
     display: none;
   }
-  body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover a {
-    transition: 0.3s all;
+  body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu li:hover a {
+    color: #f6f7f9;
     opacity: 0.7;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item.home-item {

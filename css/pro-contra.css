@@ -51,12 +51,19 @@
 }
 
 @media (max-width: 992px) {
+  .pro-cons-table .one-half {
+    border: none;
+  }
+  .pro-cons-table .one-half:first-child {
+    border-right: none;
+  }
+}
+@media (max-width: 768px) {
   .pro-cons-table {
     flex-direction: column;
   }
   .pro-cons-table .one-half {
     width: 100%;
-    border: none;
     padding: 0;
   }
   .pro-cons-table .one-half:first-child {
@@ -64,6 +71,9 @@
   }
   .pro-cons-table .one-half:last-child ul {
     padding-left: 0;
+  }
+  .pro-cons-table .one-half ul li {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=pro-contra.css.map */

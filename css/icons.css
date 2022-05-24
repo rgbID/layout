@@ -60,7 +60,6 @@
 .fa-angle-right::before {
   content: "\f6bc";
 }
-
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
@@ -73,14 +72,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff2") format("truetype"); }
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff2") format("truetype"); }
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
 
 
 .fa-solid {
