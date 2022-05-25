@@ -21,8 +21,8 @@
   font-size: 15px;
   min-height: 15px;
   font-weight: 600;
-  padding-bottom: 10px;
-  color: #000;
+  padding-bottom: 15px;
+  color: #2c2f34;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 .sidebar .container-wrapper .the-subtitle::before {
@@ -51,17 +51,44 @@
   font-weight: 600;
   line-height: 24px;
   margin-bottom: 10px;
+  margin-top: 20px;
   color: #2c2f34;
 }
 .sidebar .container-wrapper ul {
   padding: 0;
+  margin-top: 0;
   list-style-type: none;
+  margin-bottom: 30px;
 }
 .sidebar .container-wrapper ul li {
   font-size: 13.5px;
   line-height: 21px;
-  padding: 0 0 5px 12px;
+  padding: 5px 0 5px 12px;
   position: relative;
+}
+.sidebar .container-wrapper ul li:first-child {
+  padding: 0 0 5px 12px;
+}
+.sidebar .container-wrapper ul li:first-child::before {
+  content: "";
+  width: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transform: rotate(45deg);
+}
+.sidebar .container-wrapper ul li:first-child::after {
+  content: "";
+  width: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 11px;
+  transform: rotate(-45deg);
+}
+.sidebar .container-wrapper ul li:last-child {
+  padding: 5px 0 0 12px;
 }
 .sidebar .container-wrapper ul li a {
   text-decoration: none;
@@ -76,7 +103,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 13px;
   transform: rotate(45deg);
 }
 .sidebar .container-wrapper ul li::after {
@@ -85,7 +112,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 16px;
   transform: rotate(-45deg);
 }
 .sidebar .recente {
@@ -95,9 +122,11 @@
 }
 .sidebar .recente .the-subtitle {
   color: #2c2f34;
+  line-height: 24px;
 }
 .sidebar .recente .recente-main a {
   position: relative;
+  bottom: 3px;
 }
 .sidebar .recente .recente-main a img {
   max-width: 275px;
@@ -113,6 +142,7 @@
   line-height: 1.85em;
   bottom: 10px;
   right: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
 }
 .sidebar .recente .recente-main:hover a img {
   transition: all 0.3s;
@@ -136,13 +166,13 @@
   line-height: 1.4;
   font-weight: 600;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .sidebar .recente a.title-link:hover {
   color: #7c284e;
 }
 .sidebar .recente .post {
-  padding: 10px 0;
+  padding: 7px 0;
 }
 .sidebar .recente .post a {
   display: flex;
@@ -153,7 +183,7 @@
 .sidebar .recente .post a img {
   width: 110px;
   height: 75px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .sidebar .recente .post a span {
   font-family: "Montserrat";
@@ -171,6 +201,9 @@
   transition: all 0.3s;
   opacity: 0.85;
 }
+.sidebar .recente .post:last-child {
+  padding-bottom: 0;
+}
 @media (max-width: 1110px) {
   .sidebar .recente .post:nth-child(3),
 .sidebar .recente .post:nth-child(4) {
@@ -184,6 +217,7 @@
     margin-top: 0;
     width: 100%;
     padding: 20px;
+    padding-bottom: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

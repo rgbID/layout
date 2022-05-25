@@ -3,8 +3,7 @@
   box-sizing: border-box;
   background-color: #F6F6F6;
   display: flex;
-  font-family: "Roboto";
-  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
 }
 .specification-box .one-half {
   width: 50%;
@@ -34,13 +33,13 @@
 }
 .specification-box .one-half .button a {
   position: relative;
-  font-size: 12px;
+  border-radius: 30px;
+  font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
   width: 140px;
   background-color: #7c284e;
   text-align: center;
-  border-radius: 5px;
   color: white;
   line-height: 32px;
 }
@@ -50,9 +49,10 @@
 .specification-box .one-half .button span {
   position: relative;
   color: #767676;
-  line-height: 32px;
+  line-height: 18px;
   white-space: pre;
   z-index: 1;
+  margin-top: 3px;
   font-size: 13px;
 }
 

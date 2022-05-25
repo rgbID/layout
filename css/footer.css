@@ -3,9 +3,13 @@
   color: white;
   line-height: 32px;
   font-size: 13px;
-  font-family: "Roboto";
-  border-top: 8px solid #7c284e;
-  margin-top: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
+  margin-top: 50px;
+}
+#footer .grey-border {
+  background-color: #EDEDED;
+  height: 8px;
+  border-bottom: 8px solid #7c284e;
 }
 #footer a {
   color: white;
@@ -14,7 +18,7 @@
 }
 #footer a:hover {
   transition: all 0.3s;
-  color: #7c284e;
+  color: #591f3d;
 }
 #footer #site-info {
   max-width: 1200px;
@@ -61,6 +65,12 @@
   }
   #footer .footer-links a {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  #footer {
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=footer.css.map */
