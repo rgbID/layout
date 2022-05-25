@@ -70,10 +70,14 @@
   .specification-box .one-half:first-child {
     border-right: none;
   }
+  .specification-box .one-half .button a {
+    border-radius: 5px;
+  }
 }
 @media (max-width: 767px) {
   .specification-box {
     flex-direction: column;
+    padding-left: 15px;
   }
   .specification-box .one-half {
     width: 100%;

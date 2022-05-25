@@ -54,6 +54,7 @@
   text-align: center;
   line-height: 17px;
   font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
 }
 #product-table .product-table-row .column .product-table-number small {
   color: #b9b9b9;
@@ -202,8 +203,9 @@
     width: 100%;
     box-shadow: none;
     border-collapse: separate;
-    border-spacing: 0 40px;
+    border-spacing: 0 20px;
     border: none;
+    margin-top: -20px;
   }
   #product-table .product-table-head {
     display: none;
@@ -252,7 +254,23 @@
   #product-table .product-table-body .product-table-row .column .product-table-button.sale a {
     border-radius: 30px;
   }
+  #product-table .product-table-body .product-table-row .column .product-table-button.sale span {
+    margin-top: 0;
+  }
+  #product-table .product-table-body .product-table-row .column .product-table-rating {
+    padding-bottom: 5px;
+    position: relative;
+    margin-top: 20px;
+  }
+  #product-table .product-table-body .product-table-row .column .product-table-rating:before {
+    content: "EVALUARE";
+    position: absolute;
+    top: -20px;
+    color: #767676;
+    font-size: 13px;
+  }
   #product-table .product-table-body .product-table-row .column.column-title a {
+    line-height: 24px;
     padding: 5px;
   }
   #product-table .product-table-body .product-table-row .column:first-child {
@@ -268,7 +286,7 @@
     border: 1px solid #fff;
   }
   #product-table .product-table-body .product-table-row.highlighted-row .product-table-number span {
-    color: #ff9000;
+    color: #d84343;
   }
 }
 /*# sourceMappingURL=product-list.css.map */

@@ -64,6 +64,8 @@
 @media (max-width: 767px) {
   .pro-cons-table {
     flex-direction: column;
+    padding: 20px 10px;
+    padding-left: 20px;
   }
   .pro-cons-table .one-half {
     width: 100%;
@@ -74,6 +76,7 @@
   }
   .pro-cons-table .one-half:last-child ul {
     padding-left: 0;
+    margin-bottom: 0 !important;
   }
   .pro-cons-table .one-half ul li {
     padding-left: 20px;

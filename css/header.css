@@ -191,7 +191,6 @@ body #header .header-wrapper .burger-menu:hover span {
   body #header .header-wrapper .menu-wrapper {
     right: -400%;
     position: fixed;
-    transition: all 1s;
     width: 100%;
     height: 100%;
   }
@@ -211,18 +210,19 @@ body #header .header-wrapper .burger-menu:hover span {
   body #header .header-wrapper .menu-wrapper.active .header-menu {
     margin-top: 70px;
     padding: 10px 30px;
+    margin-bottom: 0;
     box-sizing: border-box;
     width: 100%;
     flex-direction: column;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu {
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item {
     height: auto;
-    padding: 15px 50px 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 40px 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     align-items: flex-start;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item a {
@@ -255,10 +255,13 @@ body #header .header-wrapper .burger-menu:hover span {
     width: 100%;
     border: none;
     background-color: transparent;
+    padding-bottom: 0;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu li a {
+    font-size: 14px;
     color: white;
     opacity: 1;
+    padding: 10px;
   }
   body #header .header-wrapper .menu-wrapper.active .header-menu .menu li.menu-item:hover .sub-menu li a:before {
     display: none;
@@ -317,23 +320,50 @@ body #header .header-wrapper .burger-menu:hover span {
   body #header .header-wrapper .menu-wrapper.active .close-button-burger {
     display: block;
     position: absolute;
-    right: 50%;
-    top: 15px;
-    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    top: 30px;
     transition: 0.3s all;
-    font-size: 22px;
+    cursor: pointer;
   }
-  body #header .header-wrapper .menu-wrapper.active .close-button-burger:hover {
-    color: red;
+  body #header .header-wrapper .menu-wrapper.active .close-button-burger::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+  }
+  body #header .header-wrapper .menu-wrapper.active .close-button-burger::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+  }
+  body #header .header-wrapper .menu-wrapper.active .close-button-burger:hover::before, body #header .header-wrapper .menu-wrapper.active .close-button-burger:hover::after {
+    background-color: red;
   }
 }
 @media (max-width: 991px) {
   body #header {
     box-shadow: 0px -30px 50px 0px #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
   }
 }
 body .search-popup {
   display: none;
+  z-index: 1000 !important;
 }
 body .search-popup.active {
   display: block;
@@ -346,16 +376,39 @@ body .search-popup.active {
   background-color: rgba(0, 0, 0, 0.9);
 }
 body .search-popup.active .close-button-search {
+  display: block;
   position: absolute;
-  right: 15px;
-  top: 15px;
-  color: #ffffff;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 17px;
+  top: 30px;
   transition: 0.3s all;
-  font-size: 22px;
-  z-index: 10;
+  z-index: 100;
+  cursor: pointer;
 }
-body .search-popup.active .close-button-search:hover {
-  color: red;
+body .search-popup.active .close-button-search::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+  transition: all 0.3s;
+}
+body .search-popup.active .close-button-search::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+body .search-popup.active .close-button-search:hover::before, body .search-popup.active .close-button-search:hover::after {
+  background-color: red;
 }
 body .search-popup.active .search-form-wrapper {
   position: relative;

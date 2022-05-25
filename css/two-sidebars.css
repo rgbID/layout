@@ -4,7 +4,7 @@
   min-width: 250px;
   padding-left: 15px;
   padding-right: 45px;
-  font-family: "Roboto";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
   line-height: 1.4;
   color: #2c2f34;
   z-index: 1;
@@ -208,6 +208,12 @@
   .sidebar .recente .post:nth-child(3),
 .sidebar .recente .post:nth-child(4) {
     margin-left: -12px;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar .recente .post:nth-child(3),
+.sidebar .recente .post:nth-child(4) {
+    margin-left: 0px;
   }
 }
 
