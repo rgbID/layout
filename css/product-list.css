@@ -224,6 +224,9 @@
   #product-table .product-table-body .product-table-row.highlighted-row:hover {
     background-color: rgb(1, 151, 188);
   }
+  #product-table .product-table-body .product-table-row.highlighted-row .column .product-table-rating:before {
+    color: #fff;
+  }
   #product-table .product-table-body .product-table-row .column {
     display: flex;
     justify-content: center;
