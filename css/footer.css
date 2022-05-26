@@ -26,7 +26,10 @@
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  line-height: 32px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "Open Sans", Arial, sans-serif;
 }
 #footer .progress-container {
   width: 100%;
@@ -70,7 +73,7 @@
 
 @media (max-width: 991px) {
   #footer {
-    margin-top: 30px;
+    margin-top: 22px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

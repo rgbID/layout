@@ -1,5 +1,4 @@
 .sidebar {
-  display: block;
   max-width: 340px;
   min-width: 250px;
   padding-left: 15px;
@@ -122,7 +121,7 @@
 }
 .sidebar .recente .the-subtitle {
   color: #2c2f34;
-  line-height: 24px;
+  line-height: 1.4;
 }
 .sidebar .recente .recente-main a {
   position: relative;
@@ -220,13 +219,17 @@
 @media (max-width: 991px) {
   .sidebar {
     max-width: 991px;
-    margin-top: 0;
+    margin-top: 15px;
     width: 100%;
-    padding: 20px;
-    padding-bottom: 0;
+    padding: 30px;
+    padding-top: 0;
     box-sizing: border-box;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
+  }
+  .sidebar .container-wrapper:first-child {
+    margin-bottom: 15px;
   }
   .sidebar .recente .recente-content {
     display: flex;

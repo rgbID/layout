@@ -241,6 +241,7 @@
   }
   #product-table .product-table-body .product-table-row .column .product-table-number span {
     color: white;
+    font-weight: 500;
   }
   #product-table .product-table-body .product-table-row .column .product-table-number small {
     color: white;
