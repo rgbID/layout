@@ -214,8 +214,13 @@
     border-bottom: none;
   }
   #product-table .product-table-body .product-table-row {
+    -webkit-appearance: none;
     border-bottom: none;
-    box-shadow: 0 6px 25px 3px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    display: block;
+    min-height: 340px;
+    box-shadow: 0 6px 25px 3px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0 6px 25px 3px rgb(0 0 0 / 20%);
     padding: 20px;
   }
   #product-table .product-table-body .product-table-row:hover {
@@ -241,6 +246,7 @@
     background-color: #7c284e;
     padding: 5px;
     border-radius: 5px;
+    min-width: 40px;
   }
   #product-table .product-table-body .product-table-row .column .product-table-number span {
     color: white;
